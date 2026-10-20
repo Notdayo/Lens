@@ -1,12 +1,12 @@
 {
   "name": "lens",
   "version": "0.2.0",
-  "description": "Unified Stellar price API — aggregates SDEX + AMM prices",
+  "description": "Unified Stellar price API \u2014 aggregates SDEX + AMM prices",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "node node_modules/prisma/build/index.js generate && tsc",
-    "start": "node dist/index.js",
+    "dev": "node api.js && tsx watch src/index.ts",
+    "build": "node api.js && node node_modules/prisma/build/index.js generate && tsc",
+    "start": "node api.js && node dist/index.js",
     "test": "vitest run",
     "smoke": "node scripts/deployed-smoke.mjs",
     "test:smoke": "node --test scripts/test-deployed-smoke.mjs",

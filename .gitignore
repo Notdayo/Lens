@@ -1,4 +1,7 @@
 node_modules/
 dist/
+temp_auto_push.bat
 .env
 *.tsbuildinfo
+.gitignore
+branch_structure.json
